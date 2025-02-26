@@ -15,6 +15,7 @@ def search_arxiv(topic: str, max_results: int = 15) -> List[Dict[Any, Any]]:
         List of dictionaries containing paper information
     """
     print(f"Searching arXiv for: {topic}")
+    topic = f"%22{topic}%22"
     client = arxiv.Client()
     search = arxiv.Search(
         query=topic,
@@ -93,3 +94,6 @@ def create_pdf(content: Dict[str, str], filename: str = "technical_review.pdf") 
     pdf.output(filename)
     print(f"PDF created at: {filepath}")
     return filepath
+
+res = search_arxiv("Adaptive ANC")
+print(res)
