@@ -1,1 +1,0 @@
-query = '("LoRA" OR "low-rank adaptation") AND ("mobile" OR "smartphone" OR "edge device" OR "on-device" OR "embedded systems") AND ("model compression" OR "parameter-efficient training" OR "few-shot learning")'

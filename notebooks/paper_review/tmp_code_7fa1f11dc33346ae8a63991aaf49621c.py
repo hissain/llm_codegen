@@ -1,1 +1,0 @@
-query = '("LoRA" OR "low-rank adaptation") AND ("mobile" OR "smartphone" OR "edge" OR "on-device")'
